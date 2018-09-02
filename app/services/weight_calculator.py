@@ -37,4 +37,8 @@ def calculate_average_cubic_weight(category):
 
 
 if __name__ == '__main__':
-    print(calculate_average_cubic_weight('Air Conditioners'))
+    print('Execution Started...')
+    category = 'Air Conditioners'
+    print('The average cubic weight for the category ({}) is :- {}'.format(
+        category, calculate_average_cubic_weight(category)))
+    print('Execution Completed...')
