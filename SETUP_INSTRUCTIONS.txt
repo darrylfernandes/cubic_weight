@@ -1,0 +1,58 @@
+SetUp Instructions:
+=======================
+
+1) Language Used: PYTHON (3.5.1), HTML5, CSS3, JAVASCRIPT
+   Python Frameworks Used: Flask, Jinja2, setuptools, pip, venv (virtual environment)
+   OS: Windows
+
+2) Install Python version - 3.5.1, and run the following command to validate the version
+	>python --version
+
+3) Download the Zip/tarball from the following location on GIT and store it on your local machine
+
+4) Create a directory to install all packages related to the application
+
+5) In the directory created above, perform the following actions in command prompt
+	a) Create Virtual Environment by running the following command:-
+	 	>python -m venv cubic_weight_venv
+
+	b) Activate the Virtual Environment by running the following command:-
+		>cd cubic_weight_venv\Scripts
+		>activate
+
+	c) In the Activated Virtual environment, run the following pip command to install the application:-
+		>pip install path\to\downloaded\zip\tarball
+
+6) The solution can been executed in 2 different ways:
+	a) Through a Command Line
+	-----------------------------
+		Instructions:
+
+		i) In the Activated Virtual environment, run the following python command:-
+		   >path\to\cubic_weight_venv\Scripts\python  path\to\cubic_weight_venv\Lib\site-packages\app\services\weight_calculator.py
+
+		It will print the following statements on the command line:-
+
+			Execution Started...
+			The average cubic weight for the category (Air Conditioners) is :- 41.613
+			Execution Completed...
+
+
+	b) Through a Web page
+	---------------------------
+		Instructions:
+
+		i) In the Activated Virtual environment, run the following python command:-
+		   >path\to\cubic_weight_venv\Scripts\python  path\to\cubic_weight_venv\Lib\site-packages\app\web_launcher.py
+
+		It will start the flask web application (development-only) server as follows:-
+
+		 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+		ii) Copy the URL as started on the command line and Paste it in any Web Browser of your choice.
+		iii) It will redirect you to a default home page
+		iv) In the web page, select Category as 'Air Conditioners' from the dropdown list (or any category of your choice)
+		v) Press Calculate button.
+		vi) The calculated Average Cubic Weight will then appear on the "Average Cubic Weight" textbox field
+		vii) To exit the server, go to the open command line and press CTRL+C to quit
+
